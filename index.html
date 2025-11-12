@@ -20,12 +20,28 @@
     <meta name="twitter:title" content="Natal Bandung 2025 - Imanuel Dalam Sejarah - Pdt. Jack Kawira" />
     <meta name="twitter:image" content="https://natalbandung.org/2025/assets/img/natal2025-profile-500.jpg">
 
-
+    <style>
+        @media (orientation: landscape) {
+            #herolandscape {
+                display:block;
+            }
+            #heroportrait {
+                display:none;
+            }
+        }
+        @media (orientation: portrait) {
+            #herolandscape {
+                display:none;
+            }
+            #heroportrait {
+                display:portrait;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div style="max-width:600px; margin:auto">
-        <img src="assets/img/poster.jpg" style="width:100%">
-    </div>
+    <img src="assets/img/poster-landscape.jpg" id="herolandscape" style="width:100%">
+    <img src="assets/img/poster-portrait.jpg" id="heroportrait" style="width:100%">
 </body>
 
 </html>
