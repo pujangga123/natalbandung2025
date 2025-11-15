@@ -1,47 +1,530 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natal Bandung 2025 - Imanuel Dalam Sejarah - Pdt. Jack Kawira.</title>
+    <title>Natal Bandung 2025 - Imanuel: Allah yang Berdiam di Tengah Umat-nya - Pdt. Jack Kawira.</title>
      <!-- WhatsApp Preview -->
-    <!-- ref: https://stackoverflow.com/questions/19778620/provide-an-image-for-whatsapp-link-sharing -->
     <meta name="description" content="Sabtu, 6 Des 2025 ⌚ pk 17.00 📍 GRII Bandung">
-    <meta property="og:title" content="Natal Bandung 2025 - Imanuel Dalam Sejarah - Pdt. Jack Kawira" />
+    <meta property="og:title" content="Natal Bandung 2025 - Imanuel: Allah yang Berdiam di Tengah Umat-nya - Pdt. Jack Kawira" />
     <meta property="og:url" content="https://natalbandung.org/2025/" />
     <meta property="og:description" content="Sabtu, 6 Des 2025 ⌚ pk 17.00 📍 GRII Bandung">
-    <meta property="og:image" content="https://natalbandung.org/2025/assets/img/natal2025-profile-500.jpg">
+    <meta property="og:image" content="https://natalbandung.org/2025/assets/img/poster.jpg">
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="id_ID" />
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Natal Bandung 2025 - Imanuel Dalam Sejarah - Pdt. Jack Kawira">
+    <meta name="twitter:title" content="Natal Bandung 2025 - Imanuel: Allah yang Berdiam di Tengah Umat-nya - Pdt. Jack Kawira">
     <meta name="twitter:description" content="Sabtu, 6 Des 2025 ⌚ pk 17.00 📍 GRII Bandung">
-    <meta name="twitter:title" content="Natal Bandung 2025 - Imanuel Dalam Sejarah - Pdt. Jack Kawira" />
-    <meta name="twitter:image" content="https://natalbandung.org/2025/assets/img/natal2025-profile-500.jpg">
+    <meta name="twitter:image" content="https://natalbandung.org/2025/assets/img/poster.jpg">
 
     <style>
-        @media (orientation: landscape) {
-            #herolandscape {
-                display:block;
-            }
-            #heroportrait {
-                display:none;
-            }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        @media (orientation: portrait) {
-            #herolandscape {
-                display:none;
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background-color: #000000;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            padding: 15px 0;
+            z-index: 1000;
+            border-bottom: 1px solid #333;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        .logo-text {
+            text-align: left;
+        }
+
+        .logo-text h1 {
+            font-size: 0.75em;
+            color: #ffffff;
+            margin: 0;
+            font-weight: normal;
+            line-height: 1.3;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.95em;
+            transition: color 0.3s;
+            font-weight: 300;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #D4AF37;
+        }
+
+        /* Hero Poster Section */
+        .hero-poster {
+            margin-top: 80px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .hero-poster img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Section Title */
+        .section-title {
+            text-align: center;
+            margin: 80px 0 60px;
+        }
+
+        .section-title h2 {
+            font-size: 2em;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            font-weight: 300;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 20px;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 2px;
+            background: url('assets/img/garis.png') center center no-repeat;
+            background-size: contain;
+        }
+
+        /* About Section */
+        .about {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .about-video {
+            position: relative;
+            padding-bottom: 75%;
+            height: 0;
+            background: #1a1a1a;
+            border: 2px solid #333;
+        }
+
+        .about-video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .about-text h3 {
+            color: #D4AF37;
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        .about-text p {
+            color: #cccccc;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+
+        .event-details {
+            background: #0a0a0a;
+            padding: 25px;
+            margin: 30px 0;
+            border-left: 3px solid #D4AF37;
+        }
+
+        .event-details h4 {
+            color: #D4AF37;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .event-details p {
+            margin-bottom: 8px;
+        }
+
+        .event-details strong {
+            color: #ffffff;
+        }
+
+        /* Instagram Section */
+        .instagram {
+            background: #000000;
+            padding: 80px 20px;
+        }
+
+        .instagram-embed {
+            max-width: 600px;
+            margin: 40px auto 0;
+            text-align: center;
+        }
+
+        /* Location Section */
+        .location {
+            background: #000000;
+            padding: 80px 20px;
+        }
+
+        .location-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .location-address {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .location-address h3 {
+            color: #ffffff;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+
+        .location-address p {
+            color: #cccccc;
+            font-size: 0.95em;
+        }
+
+        .location-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .location-images img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border: 2px solid #333;
+        }
+
+        .map-container {
+            margin-top: 40px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 500px;
+            border: 2px solid #333;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #000000;
+            padding: 80px 20px;
+        }
+
+        .contact-grid {
+            max-width: 800px;
+            margin: 40px auto 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .contact-item {
+            text-align: center;
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: #D4AF37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.8em;
+        }
+
+        .contact-item h3 {
+            color: #ffffff;
+            font-size: 1em;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+
+        .contact-item p,
+        .contact-item a {
+            color: #cccccc;
+            font-size: 0.9em;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            color: #D4AF37;
+        }
+
+        /* Footer */
+        footer {
+            background: #000000;
+            padding: 40px 20px;
+            border-top: 1px solid #333;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .social-icons a {
+            color: #D4AF37;
+            font-size: 1.5em;
+            transition: transform 0.3s;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        .footer-logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-logo img {
+            width: 60px;
+            height: auto;
+        }
+
+        .footer-text p {
+            color: #666;
+            font-size: 0.85em;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
             }
-            #heroportrait {
-                display:portrait;
+
+            .logo-text h1 {
+                font-size: 0.6em;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .location-images {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title h2 {
+                font-size: 1.5em;
+                letter-spacing: 4px;
             }
         }
     </style>
 </head>
 <body>
-    <img src="assets/img/poster-landscape.jpg" id="herolandscape" style="width:100%">
-    <img src="assets/img/poster-portrait.jpg" id="heroportrait" style="width:100%">
-</body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/img/STEMI.png" alt="GRII Bandung Logo">
+                <div class="logo-text">
+                    <h1>NATAL BERSAMA GRII BANDUNG 2025<br>Imanuel: Allah yang Berdiam di Tengah Umat-nya<br>Pdt. Jack Kawira</h1>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#instagram">Instagram</a></li>
+                <li><a href="#lokasi">Lokasi</a></li>
+                <li><a href="#kontak">Social Media</a></li>
+            </ul>
+        </div>
+    </nav>
 
+    <!-- Hero Poster -->
+    <section class="hero-poster">
+        <img src="assets/img/poster.jpg" alt="Natal Bandung 2025 - Imanuel: Allah yang Berdiam di Tengah Umat-nya">
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-title">
+            <h2>NATAL BANDUNG</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-video">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="about-text">
+                <h3>Sambutan</h3>
+                <p>...</p>
+                
+                <p>...</p>
+
+                <p>...</p>
+
+                <div class="event-details">
+                    <h4>Natal Bandung 2025 - Imanuel: Allah yang Berdiam di Tengah Umat-nya</h4>
+                    <p><strong>Pembicara:</strong> Pdt. Jack Kawira</p>
+                    <p><strong>Tanggal:</strong> Sabtu, 6 Desember 2025</p>
+                    <p><strong>Waktu:</strong> Pukul 17.00 WIB</p>
+                    <p><strong>Tempat:</strong> Aula Stefanus, GRII Bandung<br>Jl. Moch. Toha 229, Bandung</p>
+                </div>
+
+                <!-- Pendaftaran button: ganti href dengan link form Anda -->
+                <div style="text-align:center; margin-top:18px;"></div>
+                    <a href="https://example.com/form" target="_blank" rel="noopener" style="display:inline-block;background:#D4AF37;color:#000;padding:12px 22px;border-radius:6px;text-decoration:none;font-weight:600;letter-spacing:1px;">PENDAFTARAN</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="instagram" id="instagram">
+        <div class="section-title">
+            <h2>INSTAGRAM</h2>
+        </div>
+        <div class="instagram-embed">
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/griibdg/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"></blockquote>
+            <script async src="//www.instagram.com/embed.js"></script>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location" id="lokasi">
+        <div class="section-title">
+            <h2>LOKASI</h2>
+        </div>
+        <div class="location-content">
+            <div class="location-address">
+                <h3>Aula Stefanus, GRII Bandung</h3>
+                <p>Jl. Moch. Toha 229, Kota Bandung, Jawa Barat 40255</p>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.532243141504!2d107.6065826102288!3d-6.946366293024828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9f82b8afbd3%3A0xcbb37327fd0cb875!2sIndonesian%20Reformed%20Evangelical%20Church%20-%20Bandung!5e0!3m2!1sen!2sid!4v1722092892802!5m2!1sen!2sid" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / CTA Section (adapted) -->
+    <section id="kontak" class="contact cta">
+      <div class="section-title">
+        <div class="title-line" style="display:flex; align-items:center; justify-content:center; gap:20px; margin-bottom:12px;">
+          <span class="gold-line" style="flex:1; height:2px; max-width:180px; background:#D4AF37; display:block;"></span>
+          <h2 style="margin:0; padding:0 12px; text-align:center; letter-spacing:8px; font-weight:300;">Social Media</h2>
+          <span class="gold-line" style="flex:1; height:2px; max-width:180px; background:#D4AF37; display:block;"></span>
+        </div>
+      </div>
+
+            <div class="contact-grid">
+                <!-- Social media: TikTok, Instagram, YouTube -->
+                <a class="contact-item" href="https://www.tiktok.com/@griibdg" target="_blank" rel="noopener" aria-label="TikTok">
+                    <div class="contact-icon" style="background:#D4AF37;">
+                        <img src="assets/img/tiktok-svgrepo-com.svg" alt="TikTok" style="width:28px;height:28px;display:block;margin:auto;" />
+                    </div>
+                    <h3>TikTok</h3>
+                    <p style="color:#cccccc;">@griibdg</p>
+                </a>
+
+                <a class="contact-item" href="https://www.instagram.com/griibdg/" target="_blank" rel="noopener" aria-label="Instagram">
+                    <div class="contact-icon" style="background:#D4AF37;">
+                        <img src="assets/img/instagram-svgrepo-com.svg" alt="Instagram" style="width:28px;height:28px;display:block;margin:auto;" />
+                    </div>
+                    <h3>Instagram</h3>
+                    <p style="color:#cccccc;">@griibdg</p>
+                </a>
+
+                <a class="contact-item" href="https://www.youtube.com/@GRIIBDG" target="_blank" rel="noopener" aria-label="YouTube">
+                    <div class="contact-icon" style="background:#D4AF37;">
+                        <img src="assets/img/youtube-svgrepo-com.svg" alt="YouTube" style="width:28px;height:28px;display:block;margin:auto;" />
+                    </div>
+                    <h3>YouTube</h3>
+                    <p style="color:#cccccc;">GRII Bandung</p>
+                </a>
+            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/img/STEMI.png" alt="GRII Logo">
+            </div>
+            <div class="footer-text">
+                <p>© 2025 GRII Bandung. All rights reserved.<br>www.griibandung.org | natalbandung.org</p>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
